@@ -83,7 +83,7 @@ function Todo() {
 
     const submit = (e) => {
         e.preventDefault();
-        addTodo(); // Form submit hone pe bhi task add ho sake
+        addTodo(); 
     };
 
     return (
