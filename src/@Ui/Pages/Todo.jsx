@@ -88,12 +88,10 @@ function Todo() {
 
     return (
         <>
-            {/* Added dynamic full screen background color mapping for dark/light mode transition */}
             <div className={`${darkMode ? 'dark bg-gray-950' : 'bg-gray-50'} min-h-screen pt-12 transition-colors duration-500`}>
 
                 <div className="max-w-4xl mx-auto px-6 py-10 bg-white/40 dark:bg-gray-900/40 backdrop-blur-lg rounded-3xl shadow-[rgba(0,0,0,0.2)_0px_30px_60px_-12px] border border-white/30 dark:border-white/10 transition-all duration-500 hover:scale-[1.01]">
 
-                    {/* Dark Mode Toggle Button */}
                     <div className="flex justify-end mb-4">
                         <button
                             type="button"
