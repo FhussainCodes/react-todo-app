@@ -14,7 +14,6 @@ function Todo() {
         localStorage.setItem("tasks", JSON.stringify(data));
     };
 
-    // Toggle Dark Mode smoothly
     const toggleDarkMode = () => {
         const newMode = !darkMode;
         setDarkMode(newMode);
