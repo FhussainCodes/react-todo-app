@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-function Todo() {
-    // Fixed: Initialized newTodo with empty string "" instead of leaving it undefined
+function Todo() { 
+    
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState("");
     const [isEditing, setIsEditing] = useState(false);
