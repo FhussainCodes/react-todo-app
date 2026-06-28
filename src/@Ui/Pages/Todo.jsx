@@ -2,14 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 function Todo() { 
-    
+
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState("");
     const [isEditing, setIsEditing] = useState(false);
     const [editId, setEditId] = useState(null);
     const [darkMode, setDarkMode] = useState(false);
 
-    // Save tasks to LocalStorage
     const saveData = (data) => {
         localStorage.setItem("tasks", JSON.stringify(data));
     };
