@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-function Todo() { 
+function Todo() {
 
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState("");
@@ -58,7 +58,7 @@ function Todo() {
             saveData(data);
         }
 
-        setNewTodo(""); // Reset input field
+        setNewTodo("");
     };
 
     const editTodo = (id) => {
@@ -83,7 +83,7 @@ function Todo() {
 
     const submit = (e) => {
         e.preventDefault();
-        addTodo(); 
+        addTodo();
     };
 
     return (
