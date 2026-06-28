@@ -26,7 +26,6 @@ function Todo() {
         localStorage.setItem('darkMode', newMode);
     };
 
-    // Load data on component mount
     useEffect(() => {
         const isDark = localStorage.getItem('darkMode') === 'true';
         setDarkMode(isDark);
@@ -42,7 +41,6 @@ function Todo() {
         }
     }, []);
 
-    // Add and Update Tasks functionality
     const addTodo = () => {
         if (!newTodo || !newTodo.trim()) return;
 
